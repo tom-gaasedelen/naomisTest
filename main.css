@@ -1,8 +1,45 @@
 /*apply a natural box layout model to all elements but allowing components to change*/
 html {
   box-sizing: border-box;
+  font-family: Helvetica, sans-serif;
+}
+
+.everything {
+  display: flex;
+  flex-wrap: wrap;
 
 }
+
+.bubble {
+  height: 100px;
+  width: 100px;
+  border-radius: 100px;
+  border: 2px solid black;
+}
+
+#small {
+  height: 50px;
+  width: 50px;
+
+}
+
+#large {
+  height: 200px;
+  width: 200px;
+
+}
+
+.floater {
+  position: fixed;
+  left: 40%;
+  top: 40%;
+  height: 80px;
+  width: 240px;
+  background-color: black;
+  z-index: 10;
+
+}
+
 
 *, *:before, *:after {
   box-sizing: inherit;
